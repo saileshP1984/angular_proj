@@ -1,0 +1,429 @@
+<div class="wrapper  theme-1-active pimary-color-green">
+  <app-header></app-header>
+  <app-navs></app-navs>
+
+  <!-- Main Content -->
+  <div class="page-wrapper">
+
+    <div class="container-fluid">
+      <!-- Title -->
+      <div class="row heading-bg">
+        <!-- Breadcrumb -->
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+          <ol class="breadcrumb pull-left">
+            <li>
+              <a href="javascript:void(0)">Dashboard</a>
+            </li>
+            <li>
+              <a routerLink="/client-profile">
+                <span>Client Profile</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/org-list">
+                <span>Organization List</span>
+              </a>
+            </li>
+            <li class="active">
+              <span>Sub-Organization List</span>
+            </li>
+          </ol>
+        </div>
+        <!-- /Breadcrumb -->
+      </div>
+      <!-- /Title -->
+
+      <!-- Row -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default card-view">
+            <div class="panel-heading">
+              <div class="pull-left">
+                <h6 class="panel-title txt-dark">Sub-Organization List</h6>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="panel-wrapper collapse in">
+              <div class="panel-body">
+                <div class="table-wrap">
+                  <div class="table-responsive">
+                    <table id="datable_1" class="table table-striped display  pb-30">
+                      <thead>
+                        <tr>
+                          <th>State</th>
+                          <th>Dealer Type</th>
+                          <th>Sub-Org. Name</th>
+                          <th>Type</th>
+                          <th>City</th>
+                          <th>GSTN No.</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Tiger Nixon</td>
+                          <td>System Architect</td>
+                          <td>$320,800</td>
+                          <td>Edinburgh</td>
+                          <td>$320,800</td>
+                          <td>Edinburgh</td>
+                          <td class="align-center">
+                            <a href="javascript:void(0)" class="pr-10" data-toggle="modal" data-target="#exampleModal-2">
+                              <i class="fa fa-pencil"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="text-inverse" data-toggle="modal" data-target="#exampleModal-3">
+                              <i class="fa fa-bullseye"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Tiger Nixon</td>
+                          <td>System Architect</td>
+                          <td>$320,800</td>
+                          <td>Edinburgh</td>
+                          <td>$320,800</td>
+                          <td>Edinburgh</td>
+                          <td class="align-center">
+                            <a href="javascript:void(0)" class="pr-10" data-toggle="modal" data-target="#exampleModal-2">
+                              <i class="fa fa-pencil"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="text-inverse" data-toggle="modal" data-target="#exampleModal-3">
+                              <i class="fa fa-bullseye"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Tiger Nixon</td>
+                          <td>System Architect</td>
+                          <td>$320,800</td>
+                          <td>Edinburgh</td>
+                          <td>$320,800</td>
+                          <td>Edinburgh</td>
+                          <td class="align-center">
+                            <a href="javascript:void(0)" class="pr-10" data-toggle="modal" data-target="#exampleModal-2">
+                              <i class="fa fa-pencil"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="text-inverse" data-toggle="modal" data-target="#exampleModal-3">
+                              <i class="fa fa-bullseye"></i>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Row -->
+
+      <!-- Modal Box for Edit Org. -->
+      <div class="modal fade" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h5 class="modal-title" id="exampleModalLabel1">Edit Sub-Organisation</h5>
+            </div>
+            <div class="modal-body">
+              <form class="form-horizontal">
+                <div class="modal-body row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="col-md-4 control-label">Sub-Organisation Name
+                        <span data-toggle="tooltip" data-placement="top" title="Required">*</span>
+                      </label>
+                      <div class="col-md-8">
+                        <input type="text" class="form-control" placeholder="Organisation Name (As per Legal entity)" name="org_name" id="org_name"
+                          tabindex="1">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-4 control-label">Dealer Type
+                        <span data-toggle="tooltip" data-placement="top" title="Required">*</span>
+                      </label>
+                      <div class="col-md-8">
+                        <select class="form-control" placeholder="--Select Dealer Type--" name="dealer_type" id="dealer_type" tabindex="3">
+                          <!-- <option value="0">--Select Dealer Type--</option>-->
+                          <option value="Regular Dealer">Regular Dealer</option>
+                          <option value="Composite Dealer">Composite Dealer</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-4 control-label">Pin Code
+                        <span data-toggle="tooltip" data-placement="top" title="Required">*</span>
+                      </label>
+                      <div class="col-md-8">
+                        <input type="text" class="form-control" onchange="get_b_pincode(this.value)" placeholder="Your Pincode" name="pincode" id="pincode"
+                          tabindex="5">
+                        <input type="hidden" id="old_pincode" value="">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-4 control-label">State
+                        <span data-toggle="tooltip" data-placement="top" title="Required">*</span>
+                      </label>
+                      <div class="col-md-8">
+                        <!-- <input type="text" class="form-control" placeholder="State Name"  readonly ="true" name="state" id="state2" tabindex="7">-->
+                        <select class="form-control state" name="state" id="state2" tabindex="7">
+                          <!-- <option value='' selected="true">----Select State-----</option>-->
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-4 control-label">Email
+                        <span data-toggle="tooltip" data-placement="top" title="Required">*</span>
+                      </label>
+                      <div class="col-md-8">
+                        <input type="text" class="form-control" placeholder="Email Id" name="email_id" id="email_id" tabindex="9">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col-md-4 control-label">GSTN No.
+                        <span data-toggle="tooltip" data-placement="top" title="Required">*</span>
+                      </label>
+                      <div class="col-md-8">
+                        <input type="text" class="form-control" readonly="true" placeholder="Your GSTN No." name="gstn_no" id="gstn_no" tabindex="13">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="col-md-4 control-label">PAN No.
+                        <span data-toggle="tooltip" data-placement="top" title="Required">*</span>
+                      </label>
+                      <div class="col-md-8">
+                        <input type="text" class="form-control" placeholder="Your PAN No." readonly="true" name="pan_no" id="pan_no2" tabindex="2">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-4 control-label">City
+                        <span data-toggle="tooltip" data-placement="top" title="Required">*</span>
+                      </label>
+                      <div class="col-md-8">
+                        <input type="text" class="form-control" disabled="disabled" placeholder="City Name" name="city" id="city2" tabindex="8">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-4 control-label">Address Line 1
+                        <span data-toggle="tooltip" data-placement="top" title="Required">*</span>
+                      </label>
+                      <div class="col-md-8">
+                        <input type="text" class="form-control" placeholder="Your Address" name="address_line_1" id="address_line_1" tabindex="10">
+                        <input type="hidden" id="addressid" value="">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-4 control-label">Phone No.
+                        <span data-toggle="tooltip" data-placement="top" title="Required">*</span>
+                      </label>
+                      <div class="col-md-8">
+                        <input type="text" class="form-control" placeholder="Phone No." name="phone_no" id="phone_no" tabindex="12">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-4 control-label">GSTN Registration Date
+                        <span data-toggle="tooltip" data-placement="top" title="Required">*</span>
+                      </label>
+                      <div class="col-md-8">
+                        <input type="text" class="form-control" id="from_dates" name="from_dates" title="Date" tabindex="14" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-4 control-label">Contact Person Name
+                        <span data-toggle="tooltip" data-placement="top" title="Required">*</span>
+                      </label>
+                      <div class="col-md-8">
+                        <input type="text" class="form-control" id="from_dates" name="from_dates" title="Date" tabindex="14" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label class="col-md-6 col-xs-12 control-label">Legal Name of the Registered Person
+                        <span data-toggle="tooltip" data-placement="top" title="Required">*</span>
+                      </label>
+                      <div class="col-md-6 col-xs-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <span class="fa fa-pencil"></span>
+                          </span>
+                          <input type="text" class="form-control" name="legal_name_reg_p" id="legal_name_reg_p" tabindex="15">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-6 col-xs-12 control-label">Trade Name, If any</label>
+                      <div class="col-md-6 col-xs-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <span class="fa fa-pencil"></span>
+                          </span>
+                          <input type="text" class="form-control" name="trade_name" id="trade_name2" tabindex="16">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-6 col-xs-12 control-label">Aggregate Turnover in the preceding Financial Year
+                        <span data-toggle="tooltip" data-placement="top" title="Required"> *</span>
+                      </label>
+                      <div class="col-md-6 col-xs-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <span class="fa fa-inr"></span>
+                          </span>
+                          <input type="text" class="form-control" name="aggr_turnover_financial_yr" id="aggr_turnover_financial_yr2" tabindex="17">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-6 col-xs-12 control-label">Aggregate Turnover from April to June 2017
+                        <span data-toggle="tooltip" data-placement="top" title="Required"> *</span>
+                      </label>
+                      <div class="col-md-6 col-xs-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <span class="fa fa-inr"></span>
+                          </span>
+                          <input type="text" class="form-control" name="aggr_turnover_apr_jun" id="aggr_turnover_apr_jun2" tabindex="18">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary btn-anim" data-dismiss="modal">
+                <i class="ti-close"></i>
+                <span class="btn-text">Close</span>
+              </button>
+              <button class="btn btn-success btn-anim">
+                <i class="fa fa-pencil-square-o"></i>
+                <span class="btn-text">Edit</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Box for View Org. Details-->
+      <div class="modal fade" id="exampleModal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h5 class="modal-title" id="exampleModalLabel1">Organization Details</h5>
+            </div>
+            <div class="modal-body">
+              <table class="table table-striped mb-0">
+                <tbody>
+                  <tr>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">Org. Name: </label>
+                    </td>
+                    <td class="hText">B R Aluminium</td>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">PAN No: </label>
+                    </td>
+                    <td class="hText">GSPTN5591G</td>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">Dealer Type: </label>
+                    </td>
+                    <td class="hText">Regular Dealer</td>
+                  </tr>
+                  <tr>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">Business Types: </label>
+                    </td>
+                    <td class="hText">Wholesaler</td>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">Pin Code: </label>
+                    </td>
+                    <td class="hText">643212</td>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">Legal Entity Type: </label>
+                    </td>
+                    <td class="hText">Limited</td>
+                  </tr>
+                  <tr>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">State: </label>
+                    </td>
+                    <td class="hText">TAMIL NADU</td>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">City: </label>
+                    </td>
+                    <td class="hText">Nilgiris</td>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">Email: </label>
+                    </td>
+                    <td class="hText">yara@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">Address Line: </label>
+                    </td>
+                    <td class="hText">Athipalli</td>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">Contact Person Name: </label>
+                    </td>
+                    <td class="hText">Sunil Jain</td>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">Phone No: </label>
+                    </td>
+                    <td class="hText">9988723780</td>
+                  </tr>
+                  <tr>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">GSTN No: </label>
+                    </td>
+                    <td class="hText">33GSPTN5591G1ZX</td>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">GSTN Registration Date: </label>
+                    </td>
+                    <td class="hText">2017-07-02</td>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">Legal Name of the Registered Person: </label>
+                    </td>
+                    <td class="hText">B R Aluminium</td>
+                  </tr>
+                  <tr>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">Trade Name, If any: </label>
+                    </td>
+                    <td class="hText">sgv</td>
+                    <td class="align-right">
+                      <label for="recipient-name" class="control-label">Aggregate Turnover in the preceding Financial Year: </label>
+                    </td>
+                    <td class="hText">2,30,99,00,800.00</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary btn-anim" data-dismiss="modal">
+                <i class="ti-close"></i>
+                <span class="btn-text">Close</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /Main Content -->
+  </div>
+</div>
