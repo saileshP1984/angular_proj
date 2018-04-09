@@ -2,6 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+
+import { FormsModule }                  from '@angular/forms'
+import { ReactiveFormsModule }          from '@angular/forms';
+import { Title }                        from '@angular/platform-browser';
+import { HttpClientModule }             from '@angular/common/http';
+import { RouterModule }                 from '@angular/router';
+import { HttpModule }                   from '@angular/http';
+
+// Services
+    import { ApiService }           from './services/api.service';
+    // import { constants }            from './services/constants.service';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavsComponent } from './components/navs/navs.component';
@@ -43,9 +55,17 @@ const appRoutes:Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    
+    HttpClientModule,
+    BrowserModule,
+    HttpModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    ApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
