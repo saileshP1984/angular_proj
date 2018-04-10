@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
             email: 'sailesh28',
 
             // password: ''
-            password: '1234'
+            password: '1234',
 
             rememberCheck: false
         }

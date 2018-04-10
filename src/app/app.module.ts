@@ -7,7 +7,6 @@ import { FormsModule }                  from '@angular/forms'
 import { ReactiveFormsModule }          from '@angular/forms';
 import { Title }                        from '@angular/platform-browser';
 import { HttpClientModule }             from '@angular/common/http';
-import { RouterModule }                 from '@angular/router';
 import { HttpModule }                   from '@angular/http';
 
 // Services
